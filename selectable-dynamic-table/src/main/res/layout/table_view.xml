@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:cardCornerRadius="0dp"
+    app:strokeColor="@color/default_dark_color"
+    app:strokeWidth=".8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--  indexes  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/indexesParent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tableIndexes"
+                app:layout_constraintTop_toTopOf="@+id/tableIndexes">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/indexesHeaderTitleCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/default_dark_color"
+                    app:strokeWidth=".2dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--  indexes header title  -->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/indexesHeaderTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/default_light_color"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="@string/rows"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <dev.fazelx.selectable_dynamic_table.sync_scroll.ObservableScrollView
+                    android:id="@+id/indexesScroll"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/indexesHeaderTitleCard"
+                    app:layout_constraintStart_toStartOf="@id/indexesHeaderTitleCard"
+                    app:layout_constraintTop_toBottomOf="@id/indexesHeaderTitleCard">
+
+
+                    <!--  index table  -->
+                    <TableLayout
+                        android:id="@+id/tableIndexes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/default_light_color"
+                        android:stretchColumns="*" />
+
+
+                </dev.fazelx.selectable_dynamic_table.sync_scroll.ObservableScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  data  -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/dataTableHorizontalScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tableIndexes"
+                    app:layout_constraintTop_toTopOf="@+id/tableIndexes">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:id="@+id/tableHeaders"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/default_light_color" />
+
+                        <dev.fazelx.selectable_dynamic_table.sync_scroll.ObservableScrollView
+                            android:id="@+id/dataTableScroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!--  values table  -->
+                            <TableLayout
+                                android:id="@+id/tableData"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/cell_default_color"
+                                android:stretchColumns="*" />
+
+                        </dev.fazelx.selectable_dynamic_table.sync_scroll.ObservableScrollView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </HorizontalScrollView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
+
+

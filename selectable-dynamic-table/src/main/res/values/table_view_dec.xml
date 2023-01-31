@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TableView">
+        <attr name="rows_height" format="dimension"/>
+        <attr name="header_height" format="dimension"/>
+        <attr name="has_border" format="boolean"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+</resources>

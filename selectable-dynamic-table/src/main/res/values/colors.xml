@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cell_default_color">#B2EBF2</color>
+    <color name="selected_cell_default_color">#26C6DA</color>
+    <color name="default_light_color">#E0F7FA</color>
+    <color name="default_dark_color">#00838F</color>
+</resources>

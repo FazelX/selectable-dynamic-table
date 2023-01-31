@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Dynamic table</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Selectable dynamic table example</string>
+
+    <string name="send_email_to_developer" tools:ignore="ExtraTranslation">Send email to developer!</string>
+    <string name="email" tools:ignore="ExtraTranslation">fazeasdadlhey@gmail.com</string>
+</resources>
