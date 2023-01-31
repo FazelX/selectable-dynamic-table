@@ -7,7 +7,7 @@ The selectable dynamic table is an easy-to-use, lightweight library that lets yo
 
 | Static header and indexes                                                                                                                |                                                           Selectable cells and rows                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------:| 
-| <img src="https://raw.githubusercontent.com/FazelX/selectable-dynamic-table/master/sample/sdt_scroll.gif" width="270" height="480"> | <img src="https://raw.githubusercontent.com/FazelX/selectable-dynamic-table/master/sample/sdt_select.gif" width="270" height="480"> |
+| <img src="https://raw.githubusercontent.com/FazelX/selectable-dynamic-table/master/sample/sdt_scroll.gif" width="392" height="854"> | <img src="https://raw.githubusercontent.com/FazelX/selectable-dynamic-table/master/sample/sdt_select.gif" width="392" height="854"> |
 
 
 ### Features:
