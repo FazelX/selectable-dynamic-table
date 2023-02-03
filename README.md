@@ -82,16 +82,15 @@ Check out the Sample app, for more information.
 ### Gradle
 * This library is available on jitpack.io . To use it
 	
-Step 1. Add JitPack repository to your root build.gradle at the end of repositories:
+Step 1. Add JitPack repository to your root `build.gradle` at the end of repositories:
 
-```
+```gradle
 allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
-    
+	} 
 ```
 
 
