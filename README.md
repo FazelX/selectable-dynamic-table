@@ -80,7 +80,21 @@ binding.selectableDataTableView.setOnCellSelectChangeListener { isSelected, cell
 Check out the Sample app, for more information.
 
 ### Gradle
-* This library is available on jitpack.io . To use it, add the following to `build.gradle`
+* This library is available on jitpack.io . To use it
+Step 1. Add JitPack repository to your root build.gradle at the end of repositories:
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
+```
+
+
+Step 2. Add the following to ypur app level `build.gradle`
 ```gradle
 dependencies {
     implementation 'com.github.fazelx:selectable-dynamic-table:1.0'
